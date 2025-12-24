@@ -1,6 +1,8 @@
 //Load and parse the JSON data
 
 let destinationData = null;
+const cityString = 'city';
+const templeString = 'temple';
 
 async function loadDestinationData() {
     try {
@@ -11,6 +13,7 @@ async function loadDestinationData() {
     }
 }
 
+
 // Search function that accepts keywords and searches across all destination values
 function searchDestinations(keyword) {
     if (!keyword || !destinationData) {
@@ -20,6 +23,7 @@ function searchDestinations(keyword) {
 
     const searchTerm = keyword.toLowerCase().trim();
     const results = [];
+
 
     // Search in countries and cities
     if (destinationData.countries) {
@@ -44,7 +48,8 @@ function searchDestinations(keyword) {
             if (country.cities) {
                 country.cities.forEach(city => {
                     if (city.name.toLowerCase().includes(searchTerm) ||
-                        city.description.toLowerCase().includes(searchTerm)) {
+                        city.description.toLowerCase().includes(searchTerm) ||
+                        cityString.includes(searchTerm)) {
                         results.push({
                             type: 'city',
                             name: city.name,
@@ -61,7 +66,8 @@ function searchDestinations(keyword) {
     if (destinationData.temples) {
         destinationData.temples.forEach(temple => {
             if (temple.name.toLowerCase().includes(searchTerm) ||
-                temple.description.toLowerCase().includes(searchTerm)) {
+                temple.description.toLowerCase().includes(searchTerm) ||
+                templeString.includes(searchTerm)) {
                 results.push({
                     type: 'temple',
                     name: temple.name,
