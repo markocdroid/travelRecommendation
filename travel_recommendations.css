@@ -263,3 +263,91 @@ nav {
 .team-member .search-btn {
     margin-top: 10px;
 }
+
+/* Contact form */
+
+.contact-main-content {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.conact-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 5em;
+    margin-right: 50px;
+}
+
+.contact-label h1 {
+    margin: 0;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contact-label p {
+    display: flex;
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 600px;
+    background-color: rgba(0, 255, 255, 0.05);
+    padding: 30px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 212, 212, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-form button {
+    padding: 12px 30px;
+    background-color: rgba(0, 212, 212, 0.4);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.contact-form button:hover {
+    background-color: #00d4d4;
+    transform: translateY(-2px);
+}

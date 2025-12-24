@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TravelBloom</title>
+    <link rel="stylesheet" href="./travel_recommendations.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class=nav-icon> 
+                <img src="./images/logo.svg" alt="TravelBloom Logo">
+            </div>
+            <span class="nav-brand">TravelBloom</span>
+        </div>
+
+        <div class="nav-middle">
+            <a href="./travel_recommendation.html">Home</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./contact_us.html">Contact us</a>
+        </div>
+
+        <!-- Leaving an empty div here in order to keep the middle nav alignment -->
+        <div class="nav-right">
+        </div>
+    </nav>
+
+    <div class="container-wrapper">
+        <div class="social-icons">
+            <a href="#twitter" class="social-icon"><img src = "./images/twitter.svg" alt="Twitter"></a>
+            <a href="#facebook" class="social-icon"><img src = "./images/facebook.svg" alt="Facebook"></a>
+            <a href="#instagram" class="social-icon"><img src = "./images/instagram.svg" alt="Instagram"></a>
+            <a href="#YouTube" class="social-icon"><img src = "./images/youtube.svg" alt="YouTube"></a>
+        </div>
+
+        <div class="contact-main-content">
+            <div class="contact-label">
+                <h1>CONTACT US</h1>
+                <p>Get in touch</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="submit" onclick="alert('Thank You for contacting us!')">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
